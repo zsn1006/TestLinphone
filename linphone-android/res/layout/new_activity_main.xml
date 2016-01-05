@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        layout="@layout/new_top_title_bar" />
+
+    <include
+        android:id="@+id/commonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mTopLayout"
+        layout="@layout/new_in_main_commonlink" />
+
+    <TextView
+        android:id="@+id/mListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_below="@+id/commonLayout"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:gravity="center_vertical"
+        android:text="@string/lately_record"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:id="@+id/mListLine"
+        style="@style/lineStyle"
+        android:layout_below="@+id/mListTitle" />
+
+    <ListView
+        android:id="@+id/mListLately"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mListLine"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarThumbVertical="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/mShortLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/new_main_openbg0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/new_main_open_search"
+            android:gravity="center_horizontal"
+            android:text="拨号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <org.linphone.newphone.New_Dialog_DialerNumpad
+        android:id="@+id/mDialogDialer"
+        style="@style/dialerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/mTvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/mTopLayout"
+        android:background="#18535C"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

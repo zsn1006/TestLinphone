@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wait_bg" >
+
+    <RelativeLayout
+        android:id="@+id/userLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/relative_portrait"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/wave1"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/wait_anim1"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/wave2"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/wait_anim1"
+                android:contentDescription="@string/app_name"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/wave3"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/wait_anim1"
+                android:contentDescription="@string/app_name"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/mIncomeIcon"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/wait_icon" />
+
+            <TextView
+                android:id="@+id/mIncomeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mIncomeIcon"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="15dp"
+                android:text="@string/wait_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_24"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mIncomeName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/mIncomeInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wait_info0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+
+                <Chronometer
+                    android:id="@+id/mCallTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/answerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/mBtnAnswer"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:text="@string/answer_answer"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/mBtnHangup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wait_answer"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mBtnRecord"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answerLayout"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:text="@string/answer_recordaudio"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+</RelativeLayout>

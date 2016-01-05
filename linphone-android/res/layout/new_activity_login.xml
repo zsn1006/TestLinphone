@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <include
+        android:id="@+id/mTopLayout"
+        layout="@layout/new_top_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/mEditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mTopLayout"
+        android:layout_marginTop="@dimen/dimens_margin_20"
+        android:background="@color/top_bg"
+        android:orientation="vertical" >
+
+        <View style="@style/lineStyle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/mIconUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/new_login_user_icon" />
+
+            <EditText
+                android:id="@+id/mEtAccount"
+                style="@style/editStyle"
+                android:layout_toLeftOf="@+id/mIvArrow"
+                android:layout_toRightOf="@+id/mIconUser"
+                android:hint="@string/login_account"
+                android:inputType="textShortMessage"
+                android:imeOptions="actionNext"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/mIvArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_Right"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/new_icon_arrow" />
+        </RelativeLayout>
+
+        <View
+            style="@style/lineStyle"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_Right" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/mIconPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/new_login_pwd_icon" />
+
+            <EditText
+                android:id="@+id/mEtPassword"
+                style="@style/editStyle"
+                android:layout_toRightOf="@+id/mIconPwd"
+                android:hint="@string/login_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/lineStyle" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mBtnEnter"
+        style="@style/buttonStyle"
+        android:layout_below="@+id/mEditLayout"
+        android:layout_marginTop="@dimen/dimens_margin_20"
+        android:text="@string/login_enter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/mTvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/login_register"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/text_black" />
+
+        <TextView
+            android:id="@+id/mTvFindPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/login_findPwd"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</RelativeLayout>

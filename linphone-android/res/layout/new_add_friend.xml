@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        layout="@layout/new_top_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mTopLayout"
+        android:background="@color/top_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/mTvNewAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/new_menu_right0"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/new_create"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+        
+        <TextView
+            android:id="@+id/mTvSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/new_menu_right0"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/linkman_search"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/mTvAddrbook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/new_menu_right0"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/address_book"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/searchLine"
+        style="@style/lineStyle"
+        android:layout_below="@+id/searchLayout" />
+
+    <TextView
+        android:id="@+id/mTvPrompt0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_margin_48"
+        android:background="@color/top_bg"
+        android:layout_below="@+id/searchLine"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_left"
+        android:text="@string/may_knowed_person"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <View
+        android:id="@+id/promptLine"
+        style="@style/lineStyle"
+        android:layout_below="@+id/mTvPrompt0" />
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/promptLine"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_margin_48"
+        android:layout_below="@+id/promptLine"
+        android:background="@color/top_bg"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/mTvPrompt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/padding_left"
+            android:text="@string/unknowed_person"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            style="@style/lineStyle"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mTopLayout"
+        layout="@layout/new_top_title_bar" />
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginTop="@dimen/dimens_margin_20" />
+
+    <EditText
+        android:id="@+id/mEtPhone"
+        style="@style/editStyle"
+        android:background="@color/top_bg"
+        android:hint="@string/regeister_phone"
+        android:inputType="phone"
+        android:text="" />
+
+    <View style="@style/lineStyle" />
+
+    <Button
+        android:id="@+id/mBtnNext"
+        style="@style/buttonStyle"
+        android:layout_marginTop="@dimen/dimens_margin_20"
+        android:text="@string/regeister_next" />
+
+</LinearLayout>

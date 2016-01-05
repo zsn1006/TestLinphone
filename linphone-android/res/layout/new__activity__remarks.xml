@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDF3" >
+
+    <RelativeLayout
+        android:id="@+id/remarks_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/remarks_title"
+            android:textColor="@color/detailed_information_title_font_color"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/detail_left_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_top_bar"
+            android:contentDescription="@string/detailed_information_title"
+            android:src="@drawable/_people_03" />
+
+        <Button
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background_top_bar_right"
+            android:text="@string/finish"
+            android:textColor="#44A45A"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/remarks_title"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/remarks_name"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="#6F6F6F" />
+
+    <View
+        android:id="@+id/uplink"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_remarks"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/dimens_margin_5"
+        android:background="#CBCCCC" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_margin_10"
+        android:layout_marginBottom="@dimen/dimens_margin_10"
+        android:layout_alignLeft="@+id/tv_remarks"
+        android:layout_below="@+id/uplink"
+        android:ems="25"
+        android:padding="0dp"
+        android:background="@null"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18"
+        android:hint="@string/remarks_edt_input" />
+
+    <View
+        android:id="@+id/downlink"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#CBCCCC" />
+
+</RelativeLayout>

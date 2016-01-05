@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:gravity="center_vertical"
+        android:text="@string/short_Link"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <View style="@style/lineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_left"
+        android:paddingLeft="@dimen/dimens_margin_15"
+        android:paddingRight="@dimen/dimens_margin_15"
+        android:paddingTop="@dimen/padding_Right" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimens_margin_5"
+            android:layout_weight="1"
+            android:src="@drawable/new_menu_shortbg" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimens_margin_5"
+            android:layout_weight="1"
+            android:src="@drawable/new_menu_shortbg" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimens_margin_5"
+            android:layout_weight="1"
+            android:src="@drawable/new_menu_shortbg" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimens_margin_5"
+            android:layout_weight="1"
+            android:src="@drawable/new_menu_shortbg" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimens_margin_5"
+            android:layout_weight="1"
+            android:src="@drawable/new_menu_shortbg" />
+    </LinearLayout>
+    <View style="@style/lineStyle" />
+
+</LinearLayout>

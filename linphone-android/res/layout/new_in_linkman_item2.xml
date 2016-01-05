@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linkLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/padding_bottom"
+    android:paddingLeft="@dimen/padding_left"
+    android:paddingTop="@dimen/padding_top" >
+
+    <ImageView
+        android:id="@+id/mIconUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/new_usericon_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimens_margin_5"
+        android:layout_toRightOf="@+id/mIconUser"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mTvNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_20" />
+
+        <TextView
+            android:id="@+id/mTvAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_margin_2"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

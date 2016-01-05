@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDF3" >
+
+    <include
+        android:id="@+id/setted_topbar"
+        layout="@layout/top_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/setted_topbar"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#CBCCCC" />
+
+    <RelativeLayout
+        android:id="@+id/lay_voice"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/setted_topbar" >
+
+        <TextView
+            android:id="@+id/tv_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="声音"
+            android:textColor="#6F6F6F"
+            android:textSize="20sp" />
+        
+       <org.linphone.newphone.tools.SwitchButton
+            android:id="@+id/setted_voice_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lay_voice"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#CBCCCC" />
+
+    <RelativeLayout
+        android:id="@+id/lay_vibration"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/lay_voice" >
+
+        <TextView
+            android:id="@+id/tv_vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="震动"
+            android:textColor="#6F6F6F"
+            android:textSize="20sp" />
+
+        <org.linphone.newphone.tools.SwitchButton
+            android:id="@+id/setted_vibration_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lay_vibration"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#CBCCCC" />
+
+    <RelativeLayout
+        android:id="@+id/lay_about"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/lay_vibration" >
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="关于"
+            android:textColor="#6F6F6F"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/right_arrows" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lay_about"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#CBCCCC" />
+
+    <Button
+        android:id="@+id/setted_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lay_about"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/setted_exit" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mTvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_margin_20"
+        android:background="#e9e9e9"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_left"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14" />
+
+    <org.linphone.newphone.view.MyListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="0.5dp" />
+
+</LinearLayout>

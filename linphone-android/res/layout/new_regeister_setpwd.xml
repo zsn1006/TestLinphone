@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mTopLayout"
+        layout="@layout/new_top_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_margin_20"
+        android:background="@color/top_bg"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/mLine"
+            style="@style/lineStyle" />
+
+        <EditText
+            android:id="@+id/mEtUserName"
+            style="@style/editStyle"
+            android:hint="@string/regeister_name"
+            android:inputType="textShortMessage"
+            android:text=""
+            android:visibility="visible" />
+
+        <View
+            style="@style/lineStyle"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_Right"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/mEtUserPwd1"
+            style="@style/editStyle"
+            android:hint="@string/regeister_pwd1"
+            android:inputType="textPassword"
+            android:text="" />
+
+        <View
+            style="@style/lineStyle"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_Right" />
+
+        <EditText
+            android:id="@+id/mEtUserPwd2"
+            style="@style/editStyle"
+            android:hint="@string/regeister_pwd2"
+            android:inputType="textPassword"
+            android:text="" />
+
+        <View style="@style/lineStyle" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mBtnComplete"
+        style="@style/buttonStyle"
+        android:layout_marginTop="@dimen/dimens_margin_20"
+        android:text="@string/regeister_complete" />
+
+</LinearLayout>

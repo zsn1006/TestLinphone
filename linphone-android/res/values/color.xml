@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_app_color">#ffcf4c29</color>
+    
+    <color name="text_selected">#ffcf4c29</color>
+    <color name="text_over">#ffb9c4cb</color>
+    <color name="text_default">#ff5b656f</color>
+    <color name="text_disabled">#ffa6b3bf</color>
+    <color name="text_header">#ff7e8e9e</color>
+    
+    <color name="text_switch_selected">#ffffff</color>
+    <color name="text_switch">#ff41484f</color>
+    
+    <color name="text_button">#ff41484f</color>
+    <color name="text_button_disabled">#ffa6b3bf</color>
+    <color name="text_button_selected">#ff41484f</color>
+    <color name="text_button_over">#ffcf4c29</color>
+    
+    <color name="numpad_background_bottom">#ffe4edf2</color>
+    <color name="numpad_background_dialer">#ffd8d8d8</color>
+    <color name="numpad_background_top">#ffb1bdc3</color>
+    
+    <color name="missed_calls_background">#ffcf4c29</color>
+    
+    <color name="transparent">#00000000</color>
+    
+    <color name="landscape_background">#CCCCCC</color>
+    
+    <color name="text_contrast">#ff000000</color> <!-- If background is white, set to black, else set to white -->
+    <color name="menu_button_background">#ff262a2e</color>
+    
+    <!-- new -->
+    <color name="common_bg">#FFf7f9e9</color>
+    <color name="common_line">#FFcccccc</color>
+    <color name="top_bg">#FFfdfef3</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FFCCCCCC</color>
+    <color name="text_black">#FF333333</color>
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="text_gray">#FF868585</color>
+    <color name="bigButton0">#FFfb9d96</color>
+    <color name="bigButton1">#FFF72817</color>
+    <color name="back0">#FF5151E6</color>
+    <color name="back1">#FFBFAFCB</color>
+    <color name="dialerbg">#fff7f7f7</color>
+    <color name="bohao_button0">#ffffffff</color>
+    <color name="bohao_button1">#ff28C0C6</color>
+    <color name="index1">#3AAAD9</color>
+    <color name="index0">#5BB78F</color>
+    <color name="answer_icon">#EAE9E9</color>
+    <color name="font_gray">#999999</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="cursor_blue">#2E88EC</color>
+    
+        <!-- 顶部标题栏 -->
+    <color name="btn_pressed">#FDFDF3</color>
+    <color name="btn_unpressed">#FDFDF3</color>
+    <color name="right_btn_pressed">#FDFDF3</color>
+    <color name="right_btn_unpressed">#FDFDF3</color>
+    <color name="background_gray_light">#E4E4E4</color>
+    <color name="new_contacts_top_bar_font">#FDFDF3</color>
+    
+    <!-- 反馈页面 -->
+    <color name="right_btn_font_down">#333333</color>
+    <color name="right_btn_font_up">#ABA9A6</color>
+    <color name="edit_content">#FDFDF3</color>
+    
+    <!-- 关于界面 -->
+    <color name="about_us_font">#252525</color>
+    <color name="about_us_background">#F7F8EA</color>
+    <color name="about_us_top_title">#FDFDF3</color>
+    
+    <!-- 详细信息 -->
+    <color name="detailed_information_title_font_color">#343434</color>
+    
+</resources>
